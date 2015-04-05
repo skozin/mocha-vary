@@ -1,0 +1,40 @@
+{
+  "name": "mocha-vary",
+  "version": "0.9.0",
+  "description": "Easy parametrization for Mocha tests",
+  "author": "Sam Kozin <sam.kozin@gmail.com>",
+  "scripts": {
+    "prepublish": "babel ./es6 --out-dir .",
+    "test": "mocha -C --harmony --require ./test/_hook/babel.js ./test/run.js",
+    "examples": "npm run-script prepublish && _example/run-tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skozin/mocha-vary.git"
+  },
+  "keywords": [
+    "mocha",
+    "test",
+    "parametrization",
+    "parametrized",
+    "parametrize"
+  ],
+  "bugs": {
+    "url": "https://github.com/skozin/mocha-vary/issues"
+  },
+  "homepage": "https://github.com/skozin/mocha-vary",
+  "dependencies": {
+    "arrow-mocha": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel": "^4.7.9",
+    "chai": "^2.2.0",
+    "grequire": "^1.0.0",
+    "mocha": "^2.2.1"
+  },
+  "files": [
+    "index.js",
+    "es6/index.js"
+  ],
+  "license": "MIT"
+}

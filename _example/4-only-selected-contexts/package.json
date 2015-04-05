@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "test": "mocha -C ./test"
+  },
+  "devDependencies": {
+    "bluebird": "^2.9.24",
+    "chai": "^2.2.0",
+    "mocha": "^2.2.1"
+  },
+  "private": true
+}

@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "test": "mocha -C --sort ./test"
+  },
+  "devDependencies": {
+    "bluebird": "^2.9.24",
+    "chai": "^2.2.0",
+    "es6-promise": "^2.0.1",
+    "mocha": "^2.2.1"
+  },
+  "private": true
+}

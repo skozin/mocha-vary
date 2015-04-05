@@ -1,0 +1,13 @@
+#!/bin/sh
+
+for dir in ./*
+do
+  if ! [ -d "$dir" ]; then
+    continue
+  fi
+  echo; echo; echo "===> Example $dir"; echo
+  cd "$dir"
+  npm install
+  npm run test
+  cd ..
+done
