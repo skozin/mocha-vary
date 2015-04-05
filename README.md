@@ -23,9 +23,14 @@ describe('This will be parametrized', function(param1, param2) {
 b.js:
 
 ```js
-var describe = require('mocha-vary').describe
+var describe = require('mocha-vary').describe,
+    skipFirstRun = describe.skipWhen('first run')
 
 describe('This will be parametrized too', function(param1, param2) {
+  // some tests
+})
+
+skipFirstRun('And this too, but it will skip the first run', function(param1, param2) {
   // some tests
 })
 ```
