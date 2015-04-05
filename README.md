@@ -1,6 +1,12 @@
 This module allows to parametrize Mocha tests through injection
 of all required parameters into top-level `describe`s.
 
+## Installation
+
+```bash
+npm install --save mocha-vary
+```
+
 
 ## Example
 
